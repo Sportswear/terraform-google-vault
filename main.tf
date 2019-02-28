@@ -46,6 +46,8 @@ module "vault-server" {
   http_health_check     = false
   region                = "${var.region}"
   zone                  = "${var.zone}"
+  network               = "${var.network}"
+  subnetwork            = "${var.subnetwork}"
   name                  = "vault-${var.region}"
   machine_type          = "${var.machine_type}"
   compute_image         = "debian-cloud/debian-9"
